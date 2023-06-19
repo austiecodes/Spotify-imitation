@@ -7,14 +7,14 @@ class AlbumTrackCollectionViewCell: UICollectionViewCell {
     private let trackNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 18, weight: .regular)
+        label.font = .systemFont(ofSize: 15, weight: .regular)
         return label
     }()
 
     private let artistNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 15, weight: .thin)
+        label.font = .systemFont(ofSize: 12, weight: .thin)
         return label
     }()
 

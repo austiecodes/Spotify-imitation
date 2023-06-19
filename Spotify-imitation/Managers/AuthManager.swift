@@ -98,11 +98,9 @@ final class AuthManager {
 
     public func withValidToken(completion: @escaping (String) -> Void) {
         guard !refreshingToken else {
-
             onRefreshBlocks.append(completion)
             return
         }
-
         if shouldRefreshToken {
             // Refresh
             refreshIfNeeded { [weak self] success in
@@ -149,6 +147,7 @@ final class AuthManager {
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded ",
                          forHTTPHeaderField: "Content-Type")
+        // space cannot be deleted
         request.httpBody = components.query?.data(using: .utf8)
 
         let basicToken = Constants.clientID+":"+Constants.clientSecret

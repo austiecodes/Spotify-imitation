@@ -135,7 +135,7 @@ class HomeViewController: UIViewController {
         var featuredPlaylist: FeaturedPlaylistsResponse?
         var recommendations: RecommendationsResponse?
         
-        func handleResult<ModelType>(_ group: DispatchGroup, result: Result<ModelType, Error>, modelStorage: inout ModelType?) -> Void {
+        func handleResult<Model>(_ group: DispatchGroup, result: Result<Model, Error>, modelStorage: inout Model?) -> Void {
             defer {
                 group.leave()
             }
@@ -175,6 +175,7 @@ class HomeViewController: UIViewController {
                 }
 
             case .failure(let error):
+                group.leave()
                 print(error.localizedDescription)
             }
         }
@@ -191,6 +192,7 @@ class HomeViewController: UIViewController {
                 tracks: tracks
             )
         }
+        
     }
 
     private func configureModels(

@@ -1,10 +1,3 @@
-//
-//  EnvScrects.swift
-//  Spotify-imitation
-//
-//  Created by Austie Chou on 6/11/23.
-//
-
 import Foundation
 
 struct Constants {

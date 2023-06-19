@@ -173,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				CBFB7E8E2A331FEC00B47FDE /* Models */,
-				CBFB7E7D2A331FE400B47FDE /* ViewModels */,
 				CBFB7E762A331FE000B47FDE /* Managers */,
 				CBFB7E542A331FDC00B47FDE /* Controllers */,
 				CBFB7E392A331FB100B47FDE /* Views */,
@@ -296,21 +295,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		CBFB7E7D2A331FE400B47FDE /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				CBFB7E7E2A331FE400B47FDE /* CategoryCollectionViewCellViewModel.swift */,
-				CBFB7E7F2A331FE400B47FDE /* FeaturedPlaylistCellViewModel.swift */,
-				CBFB7E802A331FE400B47FDE /* NewReleasesCellViewModel.swift */,
-				CBFB7E812A331FE400B47FDE /* PlaylistHeaderViewViewModel.swift */,
-				CBFB7E822A331FE400B47FDE /* RecommendedTrackCellViewModel.swift */,
-				CBFB7E832A331FE400B47FDE /* SearchResultSubtitleTableViewCellViewModel.swift */,
-				CBFB7E842A331FE400B47FDE /* SearchResultDefaultTableViewCellViewModel.swift */,
-				CBFB7E852A331FE400B47FDE /* AlbumCollectionViewCellViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		CBFB7E8E2A331FEC00B47FDE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +316,14 @@
 				CBFB7E9E2A331FEC00B47FDE /* FeaturedPlaylistsResponse.swift */,
 				CBFB7E9F2A331FEC00B47FDE /* RecommendationsResponse.swift */,
 				CBFB7EA02A331FEC00B47FDE /* LibraryAlbumsResponse.swift */,
+				CBFB7E7E2A331FE400B47FDE /* CategoryCollectionViewCellViewModel.swift */,
+				CBFB7E7F2A331FE400B47FDE /* FeaturedPlaylistCellViewModel.swift */,
+				CBFB7E802A331FE400B47FDE /* NewReleasesCellViewModel.swift */,
+				CBFB7E812A331FE400B47FDE /* PlaylistHeaderViewViewModel.swift */,
+				CBFB7E822A331FE400B47FDE /* RecommendedTrackCellViewModel.swift */,
+				CBFB7E832A331FE400B47FDE /* SearchResultSubtitleTableViewCellViewModel.swift */,
+				CBFB7E842A331FE400B47FDE /* SearchResultDefaultTableViewCellViewModel.swift */,
+				CBFB7E852A331FE400B47FDE /* AlbumCollectionViewCellViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
